@@ -1,8 +1,8 @@
 import video from "../data/video.js";
+import Details from "../components/Details";
+import Comments from "../components/Comments";
 
 function App() {
-  console.log("Here's your data:", video);
-
   return (
     <div className="App">
       <iframe
@@ -13,6 +13,7 @@ function App() {
         allowFullScreen
         title="Thinking in React"
       />
+      <Details video={video} />
     </div>
   );
 }
